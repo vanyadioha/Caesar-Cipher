@@ -27,7 +27,9 @@ while run_again:
     direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
     message = input("Type your message:\n").lower()
     shift = int(input("Type the shift number:\n"))
+
     caesar(direction, message, shift)
+
     ask = input("Type 'yes' if you want to go again, otherwise type 'no'.\n")
     if ask.lower() == "no":
         run_again = False
